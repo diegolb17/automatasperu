@@ -42,7 +42,7 @@ export const Navigation = () => {
             </div>
             <div>
               <p className="font-display font-bold text-xl text-foreground">Los Autómatas</p>
-              <p className="text-xs text-muted-foreground hidden sm:block font-mono">Agentes IA Telefónicos</p>
+                <p className="text-xs text-muted-foreground hidden sm:block font-mono">IA & Automatización en el Perú</p>
             </div>
           </a>
 

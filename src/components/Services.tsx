@@ -49,12 +49,12 @@ export const Services = () => {
             viewport={{ once: true }}
             className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-accent text-sm font-mono mb-4"
           >
-            ECOSISTEMA INTEGRAL
+             ARQUITECTURA 360°
           </motion.span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-foreground">Más que llamadas:</span>
+             <span className="text-foreground">Más que solamente IA:</span>
             <br />
-            <span className="text-gradient">Un Ecosistema Integral</span>
+             <span className="text-gradient">Arquitectura de Automatización 360°</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Automatización de punta a punta. Desde la primera llamada hasta el cierre de venta.

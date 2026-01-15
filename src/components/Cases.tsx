@@ -1,36 +1,36 @@
 import { motion } from "framer-motion";
-import { TrendingUp, Building2, ShoppingBag, Scale } from "lucide-react";
+import { TrendingUp, Building2, ShoppingBag, Scale, Megaphone } from "lucide-react";
 
 const cases = [
   {
-    icon: Building2,
-    industry: "Inmobiliaria",
-    title: "Inmobiliaria Horizonte Lima",
-    problem: "Perdían el 60% de llamadas los fines de semana.",
-    solution: "Agente IA que pre-califica compradores y agenda visitas en Calendly.",
-    result: "S/ 450,000",
-    resultLabel: "en ventas adicionales el primer mes",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+    icon: Megaphone,
+    industry: "Marketing Digital",
+    title: "OPTMEDIA",
+    problem: "Desafío: Procesos operativos manuales y lentos que limitaban la capacidad de atención y crecimiento de la cartera de clientes.",
+    solution: "Solución con IA: Implementamos una suite de automatización con chatbots inteligentes y sistemas de 'cliente incógnito' 24/7. Resultado: Operaciones optimizadas, respuesta inmediata y un ahorro financiero masivo y comprobado para sus clientes.",
+    result: "S/ 1,000,000+",
+    resultLabel: "en ahorros para sus clientes",
+    image: "/optmedia.png",
   },
   {
     icon: ShoppingBag,
-    industry: "E-commerce / Retail",
-    title: "Moda Tech Perú",
-    problem: "Atención al cliente colapsada por preguntas sobre envíos.",
-    solution: "Automatización n8n + WhatsApp para tracking automático.",
-    result: "-80%",
-    resultLabel: "de carga operativa en soporte",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+    industry: "Salud / Nutrición Infantil",
+    title: "Muna&CO",
+    problem: "Miles de madres en cada rincón del Perú enfrentan la incertidumbre de la nutrición infantil sin acceso a asesoría experta inmediata, donde cada segundo cuenta para el desarrollo de una nueva vida.",
+    solution: "Creamos un Ecosistema de IA Multicanal: un Callbot de voz hiper-realista orquestado con bases de datos dinámicas y una integración quirúrgica con WhatsApp. Un agente IA que atiende, escucha y guía a las madres peruanas 24/7, democratizando el acceso a la salud con precisión clínica y calidez humana.",
+    result: "+200",
+    resultLabel: "madres satisfechas con la atención inmediata",
+    image: "/munayco.png",
   },
   {
-    icon: Scale,
-    industry: "Servicios Profesionales",
-    title: "Estudio Jurídico Central",
-    problem: "Abogados perdiendo tiempo filtrando clientes no calificados.",
-    solution: "Recepcionista IA que entrevista y filtra casos según especialidad.",
-    result: "100%",
-    resultLabel: "de citas con clientes de alto valor",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+    icon: Building2,
+    industry: "Industria Alimentaria",
+    title: "Thalassa Hub",
+    problem: "Thalassa Hub (25 años navegando la Industria Alimentaria). Susana Serna, CEO, enfrentaba una desconexión digital crítica. Necesitaba urgentemente una nueva web con captura de leads automatizada hacia Gmail, y una solución de formularios con IA para entornos de alta presión en ferias, capaces de orquestar seguimientos inmediatos por WhatsApp y correo para no perder ninguna oportunidad.",
+    solution: "Implementamos un ecosistema digital completo: una nueva web integrada con automatizaciones de backend hacia Gmail. Desplegamos formularios inteligentes con IA para ferias que disparan secuencias omnicanal instantáneas y personalizadas vía WhatsApp y Gmail.",
+    result: "30x",
+    resultLabel: "aumento en leads, cero prospectos perdidos",
+    image: "/thalassa.png",
   },
 ];
 
@@ -79,14 +79,14 @@ export const Cases = () => {
             >
               <div className="neu-card rounded-2xl overflow-hidden neon-border">
                 <div className="grid md:grid-cols-2">
-                  {/* Image */}
-                  <div className="relative h-64 md:h-auto overflow-hidden">
+                   {/* Image */}
+                  <div className={`relative h-64 md:h-auto overflow-hidden ${caseItem.title === "OPTMEDIA" || caseItem.title === "Muna&CO" || caseItem.title === "Thalassa Hub" ? "flex items-center justify-center" : ""}`}>
                     <img
                       src={caseItem.image}
                       alt={caseItem.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                       className={`w-full h-full ${caseItem.title === "OPTMEDIA" || caseItem.title === "Muna&CO" || caseItem.title === "Thalassa Hub" ? "object-contain bg-dark p-4 max-h-full max-w-full" : "object-cover"} group-hover:scale-105 transition-transform duration-500`}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-transparent"></div>
+                      <div className={`absolute inset-0 ${caseItem.title === "OPTMEDIA" || caseItem.title === "Muna&CO" || caseItem.title === "Thalassa Hub" ? "bg-gradient-to-b from-transparent via-dark/10 to-dark/40" : "bg-gradient-to-r from-dark via-dark/80 to-transparent"}`}></div>
                     <div className="absolute top-6 left-6">
                       <div className="flex items-center space-x-2 px-3 py-1.5 bg-accent/90 text-primary-foreground rounded-full text-sm font-semibold">
                         <caseItem.icon className="w-4 h-4" />
@@ -112,9 +112,9 @@ export const Cases = () => {
 
                     {/* Result - Big Number */}
                     <div className="flex items-center space-x-4">
-                      <div className="text-4xl md:text-5xl font-bold text-accent glow-text font-display">
-                        {caseItem.result}
-                      </div>
+                       <div className={`${caseItem.title === "OPTMEDIA" ? "text-2xl md:text-3xl" : "text-4xl md:text-5xl"} font-bold text-accent glow-text font-display`}>
+                         {caseItem.result}
+                       </div>
                       <div className="flex items-center space-x-2 text-muted-foreground">
                         <TrendingUp className="w-5 h-5 text-accent" />
                         <span>{caseItem.resultLabel}</span>
