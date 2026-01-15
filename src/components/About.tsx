@@ -19,7 +19,7 @@ export const About = () => {
             <span className="text-foreground">que tu Negocio Necesita</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Somos la primera agencia peruana especializada en crear agentes de voz con IA 
+             Somos la primera agencia peruana especializada en crear agentes de voz telefónicos con IA
             que atienden, reservan y hacen seguimiento como si fueran tu mejor empleado.
           </p>
         </div>
@@ -46,9 +46,9 @@ export const About = () => {
                 <div className="text-muted-foreground">$ whoami</div>
                 <div className="mt-2 space-y-1">
                   <div><span className="text-accent">Nombre:</span> <span className="text-foreground/80">Los Autómatas</span></div>
-                  <div><span className="text-accent">Tipo:</span> <span className="text-foreground/80">Agencia de IA Telefónica</span></div>
+                   <div><span className="text-accent">Tipo:</span> <span className="text-foreground/80">Agencia de Automatización & IA</span></div>
                   <div><span className="text-accent">Ubicación:</span> <span className="text-foreground/80">Lima, Perú 🇵🇪</span></div>
-                  <div><span className="text-accent">Especialidad:</span> <span className="text-foreground/80">Agentes de Voz IA</span></div>
+                   <div><span className="text-accent">Especialidad:</span> <span className="text-foreground/80">Arquitectura de Ecosistemas Autónomos</span></div>
                 </div>
                 <div className="mt-4 text-muted-foreground">$ ls servicios/</div>
                 <div className="mt-2 grid grid-cols-2 gap-2 text-foreground/80">
