@@ -19,7 +19,7 @@ export const Contact = () => {
     setIsLoading(true);
 
     try {
-      await fetch("https://n8n-diego-n8n.am0d7p.easypanel.host/webhook/automatas", {
+      await fetch("https://diego-n8n.kwng4i.easypanel.host/webhook/automatas", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
