@@ -138,7 +138,7 @@ export const Contact = () => {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-dark-300 text-foreground placeholder-muted-foreground focus:border-accent focus:outline-none transition-all input-neon"
-                  placeholder="+51 999 999 999"
+                  placeholder="+51 991 308 394"
                 />
               </div>
               <div className="space-y-2">
@@ -188,7 +188,7 @@ export const Contact = () => {
           className="flex justify-center space-x-4 mt-8"
         >
           <a
-            href="https://wa.me/51991623582"
+            href="https://wa.me/51991308394"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 px-6 py-3 glass rounded-full hover:bg-accent/10 transition-all group neon-border"
