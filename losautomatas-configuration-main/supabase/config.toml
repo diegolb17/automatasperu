@@ -1,0 +1,4 @@
+project_id = "csebwzbwkrjqweqqvzbs"
+
+[functions.send-config]
+verify_jwt = false
