@@ -6,10 +6,12 @@ import { Cases } from "@/components/Cases";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { ProgressBar } from "@/components/ProgressBar";
+import { CustomCursor } from "@/components/CustomCursor";
 
 const Index = () => {
   return (
     <div className="relative noise">
+      <CustomCursor />
       <ProgressBar />
       <Navigation />
       <main>

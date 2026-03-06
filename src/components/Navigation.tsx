@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Zap, Users, Mail, Briefcase, Calendar, LogIn } from "lucide-react";
+import { Menu, X, Phone, Zap, Users, Mail, Briefcase, Calendar } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navItems = [
@@ -62,11 +62,11 @@ export const Navigation = () => {
               </a>
             ))}
             <a
-              href="/login"
+              href="#contacto"
               className="neu-button px-6 py-3 rounded-full font-semibold text-primary-foreground flex items-center space-x-2"
             >
-              <LogIn className="w-4 h-4" />
-              <span>Login</span>
+              <Calendar className="w-4 h-4" />
+              <span>Agendar Consultoría</span>
             </a>
           </div>
 
@@ -108,12 +108,12 @@ export const Navigation = () => {
                 ))}
                 <div className="border-t border-foreground/10 my-2"></div>
                 <a
-                  href="/login"
+                  href="#contacto"
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex items-center justify-center space-x-2 neu-button text-primary-foreground px-6 py-4 rounded-xl font-semibold text-center"
                 >
-                  <LogIn className="w-5 h-5" />
-                  <span>Login</span>
+                  <Calendar className="w-5 h-5" />
+                  <span>Agendar Consultoría Gratis</span>
                 </a>
               </div>
             </motion.div>
