@@ -79,7 +79,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-accent" />
-                <span className="text-muted-foreground font-mono text-sm">losautomatasperu@gmail.com</span>
+                <span className="text-muted-foreground font-mono text-sm">hola@automatasperu.com</span>
               </li>
               <li className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-accent" />

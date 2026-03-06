@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 5% 6%;
+    --foreground: 240 5% 96%;
+
+    --card: 240 7% 10%;
+    --card-foreground: 240 5% 96%;
+
+    --popover: 240 6% 9%;
+    --popover-foreground: 240 5% 96%;
+
+    --primary: 336 48% 81%;
+    --primary-foreground: 240 4% 5%;
+
+    --secondary: 240 7% 11%;
+    --secondary-foreground: 240 5% 96%;
+
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 3% 55%;
+
+    --accent: 336 48% 81%;
+    --accent-foreground: 240 4% 5%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 4% 18%;
+    --input: 240 4% 18%;
+    --ring: 336 48% 81%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 6% 9%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 336 48% 81%;
+    --sidebar-primary-foreground: 240 4% 5%;
+    --sidebar-accent: 240 6% 12%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 18%;
+    --sidebar-ring: 336 48% 81%;
+  }
+
+  .light {
+    --background: 240 2% 97%;
+    --foreground: 0 0% 7%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+
+    --primary: 336 38% 76%;
+    --primary-foreground: 0 0% 7%;
+
+    --secondary: 240 2% 92%;
+    --secondary-foreground: 0 0% 7%;
+
+    --muted: 240 2% 92%;
+    --muted-foreground: 240 2% 46%;
+
+    --accent: 336 38% 76%;
+    --accent-foreground: 0 0% 7%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 2% 87%;
+    --input: 240 2% 87%;
+    --ring: 336 38% 76%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .glow-accent {
+    box-shadow: 0 0 20px hsl(336 48% 81% / 0.15), 0 0 40px hsl(336 48% 81% / 0.05);
+  }
+
+  .glow-accent-hover {
+    box-shadow: 0 0 24px hsl(336 48% 81% / 0.25), 0 0 48px hsl(336 48% 81% / 0.1);
+  }
+
+  .transition-elegant {
+    transition: all 250ms ease-in-out;
+  }
+}
