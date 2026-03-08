@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, Send, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
 import Navbar from "@/components/Navbar";
 import { FormData, initialFormData, steps } from "@/lib/form-schema";
 import Step1Identity from "@/components/steps/Step1Identity";
@@ -68,11 +67,8 @@ const Configure = () => {
 
     setIsSubmitting(true);
     try {
-      const { data, error } = await supabase.functions.invoke("send-config", {
-        body: formData,
-      });
-
-      if (error) throw error;
+      // TODO: Reemplazar con llamada a API real
+      console.log('Configuración a enviar:', formData);
       setIsSubmitted(true);
     } catch {
       toast.error("Error al enviar la configuración. Intenta de nuevo.");
